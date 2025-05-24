@@ -11,7 +11,7 @@ public class SceneSetup : MonoBehaviour
         Time.timeScale = 1.0f;
 
     }
-    public void tutor_scen()
+    public void load_scen()
     {
 
         SceneManager.LoadScene("_scene");
