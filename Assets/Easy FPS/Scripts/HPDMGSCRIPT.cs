@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HPDMGSCRIPT : MonoBehaviour
 {
@@ -27,7 +28,10 @@ public class HPDMGSCRIPT : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Debug.Log("Menu");
+            UnityEngine.Cursor.lockState = CursorLockMode.Confined;
+            SceneManager.LoadScene("menu");
+            Debug.Log("You Death!");
         }
     }
     private void OnCollisionEnter(Collision collision)
