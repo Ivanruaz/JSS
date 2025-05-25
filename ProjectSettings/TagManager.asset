@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - SecondCamera
   - BulletSpawn
+  - End
   layers:
   - Default
   - TransparentFX

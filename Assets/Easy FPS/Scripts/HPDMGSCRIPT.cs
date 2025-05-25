@@ -10,21 +10,23 @@ public class HPDMGSCRIPT : MonoBehaviour
 
     public int damage = 2;
 
-    // Start is called before the first frame update
+    public TextMesh healthText; // ƒобавь эту переменную в скрипт и назначь объект с TextMesh в инспекторе
+
     void Start()
     {
         health = maxHealth;
+        UpdateHealthText();  // обновл€ем текст при старте
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        // ничего не мен€ем здесь
     }
 
     public void TakeDamage(int amount)
     {
         health -= amount;
+        UpdateHealthText();  // обновл€ем текст при получении урона
 
         if (health <= 0)
         {
@@ -34,12 +36,21 @@ public class HPDMGSCRIPT : MonoBehaviour
             Debug.Log("You Death!");
         }
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "Dummie")
         {
             TakeDamage(damage);
+        }
+    }
+
+    void UpdateHealthText()
+    {
+        if (healthText != null)
+        {
+            healthText.text = "HP: " + health.ToString();
         }
     }
 }
