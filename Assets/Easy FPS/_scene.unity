@@ -1104,6 +1104,10 @@ PrefabInstance:
       propertyPath: playerSpotted
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1174,6 +1178,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
       propertyPath: playerSpotted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2023,6 +2031,10 @@ PrefabInstance:
       propertyPath: playerSpotted
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2181,6 +2193,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
       propertyPath: playerSpotted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2358,6 +2374,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
       propertyPath: playerSpotted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4040,6 +4060,10 @@ PrefabInstance:
       propertyPath: playerSpotted
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4208,6 +4232,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
       propertyPath: playerSpotted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4692,6 +4720,10 @@ PrefabInstance:
       propertyPath: playerSpotted
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4864,6 +4896,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
       propertyPath: playerSpotted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5706,7 +5742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 25
+  maxHealth: 15
   damage: 2
   healthText: {fileID: 1056820487}
 --- !u!4 &1319107890 stripped
@@ -6205,7 +6241,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
       propertyPath: playerSpotted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7903,6 +7947,10 @@ PrefabInstance:
       propertyPath: playerSpotted
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8612,6 +8660,10 @@ PrefabInstance:
       propertyPath: playerSpotted
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9085,6 +9137,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
       propertyPath: playerSpotted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9759,6 +9815,10 @@ PrefabInstance:
       propertyPath: playerSpotted
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10029,6 +10089,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
       propertyPath: playerSpotted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 59945dece27e7614b9aae48d188769ce, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

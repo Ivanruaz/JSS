@@ -28,6 +28,9 @@ public class EnemyAI : MonoBehaviour {
 	private float   avoidDist = 2f,
 					avoidAngleDist = 2f,
 					avoidSpeed = 100f;
+
+	public float minDistanceToPlayer = 1.2f; // Минимальная дистанция (отходит)
+	public float maxDistanceToPlayer = 2.5f; // Максимальная дистанция (подходит)
 	
 	void Start()
 	{
@@ -61,29 +64,29 @@ public class EnemyAI : MonoBehaviour {
 	
 	void EnemyMove()
 	{
-		if(playerSpotted) // If the player has been spotted then continue
+		if(playerSpotted) // Если игрок замечен
 		{
-			if(Vector3.Distance(transform.position,player.position) > 2) // If the distance from the player is greater than a number then continue
+			if(Vector3.Distance(transform.position,player.position) > 0.1f) // Было 2, стало 0.1
 			{
-				EnemyRotate(player.position); // Calls the rotate function sending the players position
-				GetComponent<Rigidbody>().MovePosition(Vector3.MoveTowards(transform.position, player.position, Time.deltaTime * speed)); // Move the enemy towards the players position
-				anim._animRun = true; // Enable the run animation
+				EnemyRotate(player.position); // Повернуть к игроку
+				GetComponent<Rigidbody>().MovePosition(Vector3.MoveTowards(transform.position, player.position, Time.deltaTime * speed)); // Двигаться к игроку
+				anim._animRun = true; // Включить анимацию бега
 			}
-			else 	// If the distance from the player is not greater than a number then continue
+			else // Если подошли вплотную
 			{
-				anim._animRun = false; // Disable the run animation
+				anim._animRun = false; // Остановить анимацию бега
 			}
 		}
-		else if(FindLastPosition() != null) // If the player has NOT been spotted and a last position has been found then continue **FindLastPosition() returns a GameObject
+		else if(FindLastPosition() != null) // Если игрок не замечен, но есть последняя позиция
 		{
-			EnemyRotate(FindLastPosition().transform.position); // Rotate enemy towards the found last position game object
-			GetComponent<Rigidbody>().MovePosition(Vector3.MoveTowards(transform.position, FindLastPosition().transform.position, Time.deltaTime * speed)); // Move the enemy towards the found last position game object
-			anim._animRun = true; // Enable the run animation
-			Debug.DrawLine(transform.position, FindLastPosition().transform.position, Color.green); // Draw a green line between the enemy and the last position
+			EnemyRotate(FindLastPosition().transform.position);
+			GetComponent<Rigidbody>().MovePosition(Vector3.MoveTowards(transform.position, FindLastPosition().transform.position, Time.deltaTime * speed));
+			anim._animRun = true;
+			Debug.DrawLine(transform.position, FindLastPosition().transform.position, Color.green);
 		}
 		else
 		{
-			anim._animRun = false; // Disable the run animation
+			anim._animRun = false;
 		}
 	}
 	

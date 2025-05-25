@@ -15,7 +15,6 @@ public class DMGSCR : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             damageTimer += Time.deltaTime;
-
             if (damageTimer >= damageInterval)
             {
                 playerHealth.TakeDamage(damage);
@@ -31,4 +30,4 @@ public class DMGSCR : MonoBehaviour
             damageTimer = 0f;
         }
     }
-}
+}       
