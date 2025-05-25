@@ -30,7 +30,7 @@ public class HPDMGSCRIPT : MonoBehaviour
         {
             Debug.Log("Menu");
             UnityEngine.Cursor.lockState = CursorLockMode.Confined;
-            SceneManager.LoadScene("menu");
+            SceneManager.LoadScene("death");
             Debug.Log("You Death!");
         }
     }

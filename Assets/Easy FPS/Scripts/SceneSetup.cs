@@ -16,4 +16,9 @@ public class SceneSetup : MonoBehaviour
 
         SceneManager.LoadScene("_scene");
     }
+    public void load_menu()
+    {
+
+        SceneManager.LoadScene("menu");
+    }
 }

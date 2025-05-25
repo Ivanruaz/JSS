@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Easy FPS/_scene.unity
     guid: 38bb0089216ab41d98ba972dc131e209
+  - enabled: 1
+    path: Assets/Easy FPS/death.unity
+    guid: 71b3e38cab4619941a4da8b52aef712e
   m_configObjects: {}
