@@ -5,27 +5,30 @@ using UnityEngine;
 public class DMGSCR : MonoBehaviour
 {
     public int damage = 2;
+    public float damageInterval = 1.0f;
     public HPDMGSCRIPT playerHealth;
 
+    private float damageTimer = 0f;
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionStay(Collision collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log(collision.gameObject.tag);
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
-            playerHealth.TakeDamage(damage);
+            damageTimer += Time.deltaTime;
+
+            if (damageTimer >= damageInterval)
+            {
+                playerHealth.TakeDamage(damage);
+                damageTimer = 0f;
+            }
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            damageTimer = 0f;
         }
     }
 }
