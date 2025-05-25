@@ -175,13 +175,13 @@ public class PlayerMovementScript : MonoBehaviour {
 
 
 	[Tooltip("The maximum speed you want to achieve")]
-	public int maxSpeed = 5;
+	public int maxSpeed = 8; // Было 5
 	[Tooltip("The higher the number the faster it will stop")]
 	public float deaccelerationSpeed = 15.0f;
 
 
 	[Tooltip("Force that is applied when moving forward or backward")]
-	public float accelerationSpeed = 50000.0f;
+	public float accelerationSpeed = 110000.0f; // Было 90000.0f
 
 
 	[Tooltip("Tells us weather the player is grounded or not.")]

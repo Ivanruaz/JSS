@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class Exit : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Выход из игры (работает и в билде, и в редакторе)
     public void exiter()
     {
+        Debug.Log("Вызван выход из игры");
         Application.Quit();
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }
